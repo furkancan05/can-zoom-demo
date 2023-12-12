@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #efd9b4;
+}
+
+.properties {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+}
+
+.zoom-image {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  padding-left: 100px;
+}
+.properties-container {
+  background-color: #a39081;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 15px;
+  padding-inline: 50px;
+  border-radius: 10px;
+}
+
+.properties-title {
+  margin-bottom: 40px;
+  font-size: 28px;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin-block: 6px;
+  gap: 10px;
+  height: fit-content;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+section p {
+  width: 160px;
+  font-size: 18px;
+}
+
+input {
+  width: 100px;
+  text-align: right;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #292522;
+  font-weight: bold;
+  padding: 5px;
+  background-color: #d6a692;
+}
+
+button {
+  background-color: #292522;
+  color: #efd9b4;
+  font-size: 16px;
+  padding-inline: 30px;
+  padding-block: 10px;
+  border-radius: 10px;
+  margin-block-start: 10px;
+}
+
+select {
+  width: 100px;
+  height: 28px;
+  background-color: #d6a692;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1220px) {
+  .app {
+    height: fit-content;
+    padding-block: 20px;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .zoom-image {
+    padding: 0;
+  }
+}
